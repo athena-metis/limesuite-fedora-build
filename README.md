@@ -1,7 +1,7 @@
 # Limesuite (LimeSDR) build script for Fedora
 This has only be tested in a non-fresh copy of Fedora 28 so your mileage may vary (there may be additional dependencies that need installing, or slightly different package names).
 
-Most of the build instructions were sources from 
+Most of the build instructions were sourced from:-
 https://discourse.myriadrf.org/t/building-limesuite-on-centos-7/1406
 
 With some changes to cater for Fedora rather than CentOS
