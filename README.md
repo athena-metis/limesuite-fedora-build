@@ -19,3 +19,5 @@ SoapySDRUtil
 LimeQuickTest
 
 LimeUtil
+
+LimeSuiteGUI
