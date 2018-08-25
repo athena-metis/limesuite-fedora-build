@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Install build dependencies
-sudo dnf install -y git gcc-c++ cmake libsqlite3x-devel libi2c-devel libusb-devel wxGTK3-devel freeglut-devel gnuplot 
+sudo dnf install -y git gcc-c++ cmake libsqlite3x-devel libi2c-devel fltk-devel libusb-devel wxGTK3-devel freeglut-devel gnuplot 
 
 #We will install to /usr/local so we need to tell fedora to look in /usr/local/lib{64}
 cat <<EOF | sudo sh -c 'cat > /etc/ld.so.conf.d/local.conf'
@@ -38,7 +38,7 @@ pushd limesuite
 git clone https://github.com/myriadrf/LimeSuite.git
 cd LimeSuite
 mkdir builddir && cd builddir
-cmake ../ -DwxWidgets_USE_STATIC:BOOL=ON -DwxWidgets_CONFIG_EXECUTABLE:FILEPATH=~/bin/wxWidgets-staticlib/bin/wx-config
+cmake ../
 
 make -j4
 sudo make install
